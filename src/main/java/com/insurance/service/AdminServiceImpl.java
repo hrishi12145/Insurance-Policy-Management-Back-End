@@ -18,6 +18,7 @@ public class AdminServiceImpl implements AdminService {
 
 	@Autowired
 	private AdminRepository adminDao;
+	
 
 	@Override
 	public Admin addAdmin(Admin admin) {
@@ -75,5 +76,6 @@ public class AdminServiceImpl implements AdminService {
 			throw new NotFoundException(String.format(ACTION_2));
 		return adminsList;
 	}
+	
 
 }
